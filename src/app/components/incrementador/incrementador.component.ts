@@ -52,7 +52,7 @@ export class IncrementadorComponent implements OnInit {
 
     this.cambiaValor.emit(this.porcentaje);
 
-    this.txtPorcentaje.nativeElement.focus();
+    // this.txtPorcentaje.nativeElement.focus();
   }
 
   cambiarValor(valor: number) {
@@ -67,5 +67,6 @@ export class IncrementadorComponent implements OnInit {
     this.porcentaje = this.porcentaje + valor;
 
     this.cambiaValor.emit(this.porcentaje);
+    this.txtPorcentaje.nativeElement.focus();
   }
 }
