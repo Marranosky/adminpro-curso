@@ -9,10 +9,16 @@ import { PagesModule } from './pages/pages.module';
 import { FormsModule } from '@angular/forms';
 import { ServiceModule } from './services/service.module';
 
+
+
 // Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+import { CasePackModalComponent } from './components/case-pack-modal/case-pack-modal.component';
+import { BusquedaAvanzadaComponent } from './components/busqueda-avanzada/busqueda-avanzada.component';
+import { MatSelectModule } from '@angular/material/select';
+
 
 
 @NgModule({
@@ -20,6 +26,7 @@ import { RegisterComponent } from './login/register.component';
     AppComponent,
     LoginComponent,
     RegisterComponent,
+  
 
   ],
   imports: [
@@ -27,7 +34,8 @@ import { RegisterComponent } from './login/register.component';
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    ServiceModule
+    ServiceModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

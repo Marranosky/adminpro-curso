@@ -19,7 +19,19 @@ export class SidebarService {
         },
         {
           titulo: 'Graficas',
-          url: 'graficas1',
+          url: '/graficas1',
+        },
+        {
+          titulo: 'promesas',
+          url: '/promesas',
+        },
+        {
+          titulo: 'Exportar a Excel',
+          url: '/exportar-excel',
+        },
+        {
+          titulo: 'Case Pack',
+          url: '/case-pack',
         },
       ],
     },
